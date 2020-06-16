@@ -1,0 +1,100 @@
+.list-group-item {
+  line-height: 2.5;
+}
+
+body, h2, caption{
+  color:#B7410E ;
+}
+
+.navigation-bkgrd {
+  background-color: #B7410E ;
+}
+
+.navbar-brand{
+  font-weight: bold;
+}
+
+.jumbotron {
+  padding: 0px; 
+  border: 0px;
+  background-color: transparent;
+}
+
+#dashboardH2{
+  text-align: center;
+}
+
+#signupContainer, #loginContainer {
+margin: auto;
+width: 50%;
+}
+
+.user-container, #dashboard-table {
+  width: 100%;
+}
+
+ #time-piece {
+   font-size: xx-small;
+ }
+
+img {
+  width: 100%;
+  height: 300px;
+  padding-left: -125px;
+  border: 0px;
+}
+
+.box1{
+  width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 50px;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+}
+
+.box1 .text{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 125px;
+  background-color: transparent;
+}
+
+#dashboard-table {
+  /* display: block; */
+  height: 100px;
+  overflow: auto;
+  width: 100%;
+  color: #B7410E;
+}
+
+.dashboard-tableWrapper {
+  margin: 0 auto;
+}
+
+th, td {
+  white-space: nowrap;
+  color: #B7410E;
+}
+
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+.authenticateBtn {
+  color: white;
+  background-color: #B7410E ;
+  /* border: 25px; */
+  border-radius: 4px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bolder;
+}

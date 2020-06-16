@@ -1,0 +1,19 @@
+language: node_js
+node_js: '12'
+branches:
+  only:
+  - master
+cache:
+  directories:
+  - node_modules
+before_install:
+- npm update
+install:
+- npm install
+git:
+  depth: 100
+deploy:
+  provider: heroku
+  api_key:
+    secure: IeZA+KolsI5rzbFG9+17p8TMRa4SFsgtyXCtLWL7zHHhDucQ6jUSgiGizeVSJm3O4g3SGVNYKkmw5IvtnH0gg9i7rTPV1xhus49lRvxj04FKDIFogeckbdvPqzx/SSmNRS3me9eF47Yu68B2HIqGpMSvX+cHnQFMazRqGBHCIBOIGErgjMRHPHHrdDA4827m9O3sD32WOz6pdEpp/XwPLkNhjg4xW/NQGjVD6F0b3yFsLTSqNMMIQMeaXm0EIZvotVOu/XsRYiBtLfPm3UG2zp/tveR/iPegg8G1IXsiLddzrJSbMtwTK7PHLDGO0XFfEiUiRDumukPWrAoKueHb8FNKmlxDomV5s2c6yy4EzeRnMCNJufxXUKx/LJlbuH29NqlHPKtW4HhKfEdnZjfJ2hRv+qFWWC+or+0mJEJZ6ozSNMEXH1ItFAR/pHajsykgMsJmcndKcNvVlYeK4sFX3ecAAbukWuGK4D4QjqlL8lBemrivYqWTnN8BWoF0D9DO7Bbl7jj4Sm48slrP8DvT9qb8yme1Ehpv9ZuJo198OJRLBOqxY4GZolvDAVpdA3dl6URhJNnpdlC0Fzmd3V61Rxn9+6xErDJfR0D+pWI47Q5nXO9kuONAVzjN75s9qfn1CwkXRLkhTym9Y8hQLIYNaj4y3aDoBk4bK2ebXqv/mVs=
+  app: time-tracker-3000

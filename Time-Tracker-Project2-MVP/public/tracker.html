@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src=“https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js”></script>
+  <link rel="stylesheet" href="styles/styles.css" media="screen" title="no title" charset="utf-8">
+  <link rel="icon" href="Assets/Images/clock_favicon.png" type="image/x-icon/">
+
+  <title>Time Tracker 3000</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark navigation-bkgrd">
+    <a class="navbar-brand" href="#">Time Tracker 3000</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/login">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Logout</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Tracker Functions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/tracker">Tracker</a>
+            <a class="dropdown-item" href="/dashboard">Dashboard </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <div class="box1">
+      <img src="Assets/Images/european-timepiece-background.jpg" alt="time piece" id="timePiece" /><br>
+      <div class="text">
+        <h1>Time Tracker 3000</h1>
+      </div>
+      <p id="time-piece">Background Photos from <a href="https://pngtree.com/free-backgrounds">pngtree.com</a></p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="center-align">Start Tracking your time!</h1>
+      <p id="displayTime"></p>
+    </div>
+    <div class="row">
+      <div class="col sm-2 md-2">
+        <div class="card">
+          <div class="card-body">
+            <h1 id="current-time" class="text-success"></h1>
+            <h2>Clock In Time: </h2>
+            <p id="clock-in-time"> Clock In Time</p>
+            <button id="clock-in" type="button" class="btn btn-success">Clock In</button>
+            <h2>Clock Out Time: </h2>
+            <p id="clock-out-time"> Clock Out Time</p>
+            <button id="clock-out" type="button" class="btn btn-danger" disabled>Clock Out</button>
+            <br>
+            <h2>Break Time: </h2>
+            <p id="clock-out-time"> Clock Out Time</p>
+            <button id="break-btn" type="button" class="btn btn-warning" disabled>Go On Break</button>
+          </div>
+        </div>
+      </div>
+      <div class="col sm-2 md-2">
+        <div class="card">
+          <div class="card-body">
+            <h2>Time Clocked in: </h2>
+            <span id="time-clocked-in"></span>
+            <label id="hours">00</label>:<label id="minutes">00</label>:<label id="seconds">00</label>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col sm-2 md-2">
+            <div class="card">
+              <div class="card-body">
+                <h2>Time Worked Today:</h2>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col sm-2 md-2">
+              <div class="card">
+                <div class="card-body">
+                  <h2>Money Earned Today:</h2>
+                  <span id="todays-earnings"></span>
+                  <label id="money-earned"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/dashboard/">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src=https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="js/tracker.js"></script>
+</body>
+
+</html>
