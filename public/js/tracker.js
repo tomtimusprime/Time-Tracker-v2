@@ -3,14 +3,12 @@ $(document).ready(function () {
     displayTime.textContent = moment().format("dddd, MMMM DD, YYYY hh:mm A");
     const clockInBtn = document.querySelector("#clock-in");
     const clockOutBtn = document.querySelector("#clock-out");
-    // const breakBtn = document.querySelector("#break-btn");
     const clockInTimeEl = document.querySelector("#clock-in-time");
     const clockOutTimeEl = document.querySelector("#clock-out-time");
     const currentTimeEl = document.querySelector("#current-time");
     currentTimeEl.textContent = "Current Time: " + moment().format("h:mm:ss A");
-    // const timeClockedInEl = document.querySelector("#time-clocked-in");
     const todaysEarnings = document.querySelector("#money-earned");
-    // const users = require("./users");
+
 
     let breakTime = false;
     let resumeClockInTime;
@@ -25,7 +23,6 @@ $(document).ready(function () {
     displayTimeTimer();
     currentTimeTimer();
 
-    // var minutesPassed = moment().diff(start, 'minutes');
 
     function displayLapsedTime() {
 
@@ -109,7 +106,6 @@ $(document).ready(function () {
         localStorage.setItem("clockIn", moment().format("hh:mm:ss"));
         clockInBtn.disabled = true;
         clockOutBtn.disabled = false;
-        // breakBtn.disabled = false;
         displayLapsedTime();
     });
     clockOutBtn.addEventListener("click", function (e) {
@@ -138,9 +134,6 @@ $(document).ready(function () {
         return false;
     });
 
-    // breakBtn.addEventListener("click", (e) => {
-
-    // });
 
 });
 
