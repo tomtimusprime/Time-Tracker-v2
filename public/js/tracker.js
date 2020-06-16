@@ -63,7 +63,7 @@ $(document).ready(function () {
 
     const displayEarnings = () => {
         totalEarnings = ((userData.wage / 3600) * totalSeconds).toFixed(2);
-        todaysEarnings.textContent = totalEarnings;
+        todaysEarnings.textContent ='$' + totalEarnings;
     }
 
     let newTime;
