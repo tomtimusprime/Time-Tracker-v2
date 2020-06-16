@@ -33,8 +33,8 @@ $(document).ready(function () {
         userLname.textContent = userData.last_name;
         userEmail.textContent = userData.email;
         userWage.textContent = userData.wage;
-        userTime.textContent = userData.total_time;
-        userEarnings.textContent = userData.total_earnings;
+        userTime.textContent = ((parseInt(userData.total_time))/3600).toFixed(2);
+        userEarnings.textContent = '$'+userData.total_earnings;
     }
 
     main();

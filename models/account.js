@@ -27,17 +27,12 @@ module.exports = (sequelize, DataTypes) => {
                 type: DataTypes.STRING,
                 allowNull: false
             },
-            time_worked: {
-                type: DataTypes.DECIMAL(10,2),
-                allowNull: false,
-                defaultValue: 0
-            },
             wage: {
                 type: DataTypes.DECIMAL(6,2),
                 allowNull: false
             },
             total_time: {
-                type: DataTypes.DECIMAL(10,2),
+                type: DataTypes.INTEGER,
                 allowNull: false,
                 defaultValue: 0
             },
