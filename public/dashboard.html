@@ -64,24 +64,27 @@
   </div>
   <div class="container user-container">
     <h2 id="dashboardH2">Time Tracker Dashboard</h2>
-    <!-- <input id="enteredUserId" placeholder="Enter User ID"/><button class="authenticateBtn" id="submitUser">Submit</button> -->
     <div class="table-responsive">
       <table class="table table-striped table-bordered table-sm" id="dashboard-table">
-        <caption>List of users</caption>
         <thead>
           <tr>
-            <th scope="col">ID </th>
+            <!-- <th scope="col">ID </th>
+            <td id="user-id"></td> -->
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
-            <th scope="col">Time Worked</th>
             <th scope="col">Wage</th>
             <th scope="col">Total Time Worked</th>
             <th scope="col">Total Earnings</th>
-            <!-- <th scope="col">Delete User</th> -->
+            <tr>
+              <td id="user-fname"></td>
+              <td id="user-lname"></td>
+              <td id="user-wage"></td>
+              <td id="user-time"></td>
+              <td id="user-earnings"></td>
+            </tr>
           </tr>
         </thead>
         <tbody>
-          <!-- Table data gets built here by jQuery -->
         </tbody>
       </table>
     </div>
