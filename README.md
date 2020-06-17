@@ -83,7 +83,7 @@ This project is deployed on Heroku. The link to web app is:
 
 ## Issues/Bugs
 
-Please report any bugs [here](hhttps://github.com/tomtimusprime/Time-Tracker-v2/issues).
+Please report any bugs [here](https://github.com/tomtimusprime/Time-Tracker-v2/issues).
 
 ---
 
