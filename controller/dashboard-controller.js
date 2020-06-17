@@ -3,6 +3,8 @@ const passport = require("passport");
 const router = express.Router();
 const db = require("../models");
 const webToken = require("jsonwebtoken");
+const jwtSecret = require("../config/jwt-config");
+
 
 
 
@@ -31,7 +33,7 @@ router.get("/api/dashboard/:id", async (req, res) => {
             // passport.authenticate("jwt", { failureRedirect: "/login" });
             console.log(req.user);
             const jwt = req.cookies.jwt;
-            const decoded = webToken.verify(jwt,"i want to believe");
+            const decoded = webToken.verify(jwt,jwtSecret.secret);
             console.log(jwt);
             console.log(decoded);
             const data = await db.account.findOne({where:{email: decoded.email}});

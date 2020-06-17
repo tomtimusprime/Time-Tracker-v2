@@ -11,7 +11,7 @@ const jwtSecret = require("../config/jwt-config");
 router.use(
   session({
     cookie: { maxAge: 6000000 },
-    secret: "wootwoot",
+    secret: jwtSecret.session_secret,
     saveUninitialized: true,
     resave: true
   })
