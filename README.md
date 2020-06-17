@@ -2,22 +2,19 @@
 [![Build Status](https://travis-ci.com/sdanyalk/auth-project-two.svg?branch=master)](https://travis-ci.com/sdanyalk/auth-project-two)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](license)
 
-# Authentication for Project Two
-This project showcases how to add authentication using `passport.js` library. Template for this project is the starter template given for Project Two.
-
-`passport.js` provides many authentication strategies. This project makes use of **local** username and password authentication strategy. More details about this strategy can be found [here](http://www.passportjs.org/packages/passport-local/).
-
-Passport Local strategy expects you to have username and password stored in your database. In this project I'm using email address as a username. The passwords are stored as a hash using **bcrypt**.
-
-**Version 2** of this project includes securing the API routes by using passport js **JWT strategy**. More about JWT-passport strategy can be found [here](http://www.passportjs.org/packages/passport-jwt/).
-
+# Time Tracker Overview
+This is an easy to use time tracker system to allow freelancers or independent contractors to manage their time and  earnings based on their hourly wage. Included in this project is secure login authentication, a page to track clocking in and clocking out and then finally a dashboard that allows the user to see their total hours worked and total earnings. 
 ---
+
+### Concept/User Story
+User Story - 
+AS A USER that wants to track their billable hours worked
+I WANT TO be able to have a program track all that information for me and allow me to see it at a glance.
+SO THAT I can manage my the amount of time I work all in one place.
 
 ## Usage
 
-You are most welcome to use this project as a starter code for your project-2. You have my full permission, and blessing.
-
-To show this, I've published this project as a github *template* project. On the top, just before `Clone or download` button you will see a green `Use this template` button. This will allow you to create your own project based off this starter code project. So instead of cloning or forking, that is what I will recommend doing.
+You are more than welcome to use this project as long as you have the permission of the authors: Tom Black, Dee Ann Scanniello, and Joseph Favorito.
 
 ---
 
@@ -25,7 +22,7 @@ To show this, I've published this project as a github *template* project. On the
 
 1. Clone this repository.
     ```
-    git clone https://github.com/sdanyalk/auth-project-two.git
+    git clone https://github.com/tomtimusprime/Time-Tracker-v2
     ```
 1. Navigate into the cloned directory.
     ```
@@ -73,16 +70,8 @@ To show this, I've published this project as a github *template* project. On the
 
 This project is deployed on Heroku. The link to web app is:
 
-[https://auth-project-two.herokuapp.com/](https://auth-project-two.herokuapp.com/)
+[https://time-tracker-v-2.herokuapp.com/](https://time-tracker-v-2.herokuapp.com/)
 
----
-
-## Nice to have
-
-- [x] Secure the API endpoints by using JWT strategy in passport js.
-- [ ] Add Jest unit tests.
-
----
 
 ## Troubleshooting
 
@@ -94,7 +83,7 @@ This project is deployed on Heroku. The link to web app is:
 
 ## Issues/Bugs
 
-Please report any bugs [here](https://github.com/sdanyalk/auth-project-two/issues).
+Please report any bugs [here](hhttps://github.com/tomtimusprime/Time-Tracker-v2/issues).
 
 ---
 
