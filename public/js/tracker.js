@@ -130,7 +130,8 @@ $(document).ready(function () {
                 alert('Load was performed.');
             }
         });
-        location.reload();
+        window.location.replace("/dashboard");
+        
         return false;
     });
 

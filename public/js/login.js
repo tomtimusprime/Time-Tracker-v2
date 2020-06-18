@@ -11,16 +11,7 @@ $(document).ready(function () {
         var emailInput = $("input#inputEmail");
         var passwordInput = $("input#inputPassword");
         console.log("email " + emailInput + ", password " + passwordInput );
-        // if ($("#rememberMe").is(":checked")) {
-        //     // save username and password
-        //     localStorage.userName = emailInput;
-        //     localStorage.password = passwordInput;
-        //     localStorage.checkBoxValidation = $("#rememberMe").val();
-        // } else {
-        //     localStorage.userName = "";
-        //     localStorage.password = "";
-        //     localStorage.checkBoxValidation = "";
-        // }
+    
         var userData = {
             email: emailInput.val().trim(),
             password: passwordInput.val().trim()

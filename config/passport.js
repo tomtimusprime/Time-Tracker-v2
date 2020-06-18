@@ -39,13 +39,6 @@ module.exports = passport => {
             password: await db.account.generateHash(password)
           });
 
-          // const record = {
-          //   status: "SignUp",
-          //   userId: data.dataValues.id
-          // };
-
-          // data = await db.history.create(record);
-
           return cb(null, data);
         }
       }
